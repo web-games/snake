@@ -3,13 +3,13 @@ import ICommand = puremvc.ICommand
 import INotification = puremvc.INotification
 
 import Game from '../../Game';
-import Scene from '../mediator/view/scene/Scene';
+import Scene from '../mediator/scenes/Scene';
 import ApplicationFacade from '../ApplicationFacade';
 
-import LoadingScene from '../mediator/view/scene/load/LoadScene';
+import LoadingScene from '../mediator/scenes/load/LoadScene';
 import LoadingSceneMediator from '../mediator/LoadSceneMediator';
 
-import GameScene from '../mediator/view/scene/game/GameScene';
+import GameScene from '../mediator/scenes/game/GameScene';
 import GameSceneMediator from '../mediator/GameSceneMediator';
 import GameProxy from '../proxy/GameProxy';
 import GameCommand from './GameCommand'

@@ -1,9 +1,9 @@
 import Mediator = puremvc.Mediator;
 import IMediator = puremvc.IMediator;
 import INotification = puremvc.INotification;
-import GameScene from './view/scene/game/GameScene';
+import GameScene from './scenes/game/GameScene';
 import GameProxy from '../proxy/GameProxy';
-import {SceneEvent} from './view/scene/Scene'
+import {SceneEvent} from './scenes/Scene'
 import GameCommand from '../command/GameCommand'
 
 export default class GameSceneMediator extends Mediator implements IMediator {
@@ -12,7 +12,7 @@ export default class GameSceneMediator extends Mediator implements IMediator {
   constructor(viewComponent: any) {
     super(GameSceneMediator.NAME, viewComponent)
 
-    this.gameScene.on('CHANGE_ANGLE', angle => this.sendNotification(GameCommand.CHANGE_ANGLE, angle));
+    this.gameScene.on(GameCommand.CHANGE_DIRECTION, angle => this.sendNotification(GameCommand.CHANGE_DIRECTION, angle));
   }
 
   public listNotificationInterests(): string[] {

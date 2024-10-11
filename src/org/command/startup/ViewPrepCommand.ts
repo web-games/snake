@@ -2,9 +2,9 @@ import SimpleCommand = puremvc.SimpleCommand;
 import INotification = puremvc.INotification;
 
 import Game from '../../../Game'
-import LoadingScene from '../../mediator/view/scene/load/LoadScene';
+import LoadingScene from '../../mediator/scenes/load/LoadScene';
 import LoadSceneMediator from '../../mediator/LoadSceneMediator';
-import GameScene from '../../mediator/view/scene/game/GameScene';
+import GameScene from '../../mediator/scenes/game/GameScene';
 import GameSceneMediator from '../../mediator/GameSceneMediator';
 
 export default class ViewPrepCommand extends SimpleCommand {

@@ -1,7 +1,7 @@
 import Mediator = puremvc.Mediator;
 import IMediator = puremvc.IMediator;
-import LoadingScene from './view/scene/load/LoadScene'
-import {SceneEvent} from './view/scene/Scene';
+import LoadingScene from './scenes/load/LoadScene'
+import {SceneEvent} from './scenes/Scene';
 import SceneCommand from '../command/SceneCommand';
 
 export default class LoadSceneMediator extends Mediator implements IMediator {

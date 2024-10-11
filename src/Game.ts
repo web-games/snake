@@ -1,12 +1,12 @@
 export default class Game extends PIXI.Application {
 
-  public static NAME = "game"
+  public static NAME = "SNAKE"
 
-  public static NUM = 0
+  public static COUNT = 0
 
   constructor(config) {
     super(config)
-    Game.NAME = "game" + Game.NUM++
+    Game.NAME = "game" + Game.COUNT++
 
     this.view.style.width = "100%";
     document.body.prepend(this.view)
