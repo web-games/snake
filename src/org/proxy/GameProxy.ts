@@ -31,7 +31,7 @@ export default class GameProxy extends Proxy implements IProxy {
     public beans = [];
     public snake = [];
     public speed = 20;
-    public pause = true;
+    public pause = false;
     public game = null;
     public current_direction = Direction.Right
 
