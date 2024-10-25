@@ -1,6 +1,6 @@
 import Proxy = puremvc.Proxy;
 import IProxy = puremvc.IProxy;
-import Game from '../../Game';
+import Game from '../Application';
 import {MapConfig} from "./GameConfig";
 
 const {rows, cols, gridWidth, gridHeight, mapData, gridColor} = MapConfig;

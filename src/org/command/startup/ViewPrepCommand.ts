@@ -1,9 +1,9 @@
 import SimpleCommand = puremvc.SimpleCommand;
 import INotification = puremvc.INotification;
 
-import Game from '../../../Game'
-import LoadingScene from '../../mediator/scenes/load/LoadScene';
-import LoadSceneMediator from '../../mediator/LoadSceneMediator';
+import Game from '../../Application'
+import LoadingScene from '../../mediator/scenes/loading/LoadingScene';
+import LoadSceneMediator from '../../mediator/LoaddingSceneMediator';
 import GameScene from '../../mediator/scenes/game/GameScene';
 import GameSceneMediator from '../../mediator/GameSceneMediator';
 

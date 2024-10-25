@@ -26,6 +26,8 @@ export default class GameScene extends Scene {
     public init(gameProxy: GameProxy) {
         super.init(gameProxy);
 
+        this.addChild(Sprite.from('./resources/images/sp_game_background.jpg'))
+
         const animalContainer = new Container();
         this.addChild(animalContainer);
         this.animalContainer = animalContainer;
@@ -52,9 +54,8 @@ export default class GameScene extends Scene {
     initRenderRocker() {
         let rocker = new Rocker()
         this.addChild(rocker)
-        rocker.init();
-        rocker.x = this.stageWidth / 2;
-        rocker.y = this.stageHeight - 200;
+        rocker.x = 40;
+        rocker.y = this.stageHeight - 50;
     }
 
     public renderSnake(snake) {
