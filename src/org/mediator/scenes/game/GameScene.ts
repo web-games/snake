@@ -26,7 +26,13 @@ export default class GameScene extends Scene {
     public init(gameProxy: GameProxy) {
         super.init(gameProxy);
 
-        this.addChild(Sprite.from('./resources/images/sp_game_background.jpg'))
+        const screen_bg = new Graphics()
+        screen_bg.beginFill(window.themeColor);
+        screen_bg.drawRect(0, 0, this.stageWidth, this.stageHeight)
+        screen_bg.endFill();
+        screen_bg.x = 0;
+        screen_bg.y = 0;
+        this.addChild(screen_bg)
 
         const animalContainer = new Container();
         this.addChild(animalContainer);

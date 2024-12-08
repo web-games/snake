@@ -6,7 +6,7 @@ export default class Game extends PIXI.Application {
 
   constructor(config) {
     super(config)
-    Game.NAME = "game" + Game.COUNT++
+    Game.NAME = "application" + Game.COUNT++
 
     this.view.style.width = "100%";
     document.body.prepend(this.view)
